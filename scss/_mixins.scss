@@ -1,0 +1,20 @@
+@mixin flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin list-unstyled{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@mixin link-unstyled{
+    display: inline-block;
+    text-decoration: none;
+}
+
+@mixin transition{
+    transition: all 0.5s ease;
+}

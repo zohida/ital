@@ -1,0 +1,151 @@
+.site-footer {
+    background-color: #202020;
+}
+
+.site-footer__top {
+    padding: 49px 0 71px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D8B152;
+}
+
+.site-footer__list {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.site-footer__list::before {
+    content: "Информация";
+}
+
+.site-footer__list:nth-child(2):before {
+    content: "Контакты";
+}
+
+.site-footer__list:nth-child(3):before {
+    content: "Соц. сети";
+}
+
+.site-footer__item--first {
+    margin-top: 20px;
+}
+
+.site-footer__link {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.9;
+}
+
+.site-footer__item--one, 
+.site-footer__item--two {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.site-footer__item--one::before {
+    display: block;
+    background-image: url("/images/tel.svg");
+    width: 22px;
+    height: 22px;
+    content: "";
+}
+
+.site-footer__item--two::before {
+    display: block;
+    background-image: url("/images/mail.svg");
+    width: 22px;
+    height: 22px;
+    content: "";
+}
+
+.site-footer__bottom {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-footer__sublink {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+@media only screen and (max-width:576px) {
+    .site-footer__top {
+        padding-top: 65px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .site-footer__logo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .site-footer__list--last {
+        display: none;
+    }
+
+    .site-footer__list {
+        padding: 0;
+    }
+
+    .site-footer__list::before {
+        display: none;
+    }
+
+    .site-footer__item--last {
+        display: flex;
+        gap: 50px;
+    }
+
+    .site-footer__bottom {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .site-footer__link {
+        font-size: 14px;
+    }
+
+    .site-footer__item--last {
+        display: flex;
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .site-footer__top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: nowrap;
+    }
+
+    .site-footer__list {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .site-footer__item--last {
+        display: flex;
+        gap: 30px;
+    }
+}

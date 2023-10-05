@@ -1,0 +1,47 @@
+.site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header__logo-mobile {
+    display: none;
+}
+
+.site-header__list {
+    display: flex;
+    gap: 50px;
+}
+
+.site-header__link {
+    color: #424242;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu {
+    display: none;
+}
+
+@media only screen and (max-width:576px) {
+    .site-header__logo-mobile {
+        display: block;
+        width: 120px;
+        height: 120px;
+    }
+
+    .site-header__logo,
+    .site-header__nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        background-image: url(/images/menu.svg);
+        width: 60px;
+        height: 16px;
+        background-color: transparent;
+        border: transparent;
+    }
+}
